@@ -1,7 +1,9 @@
 
 ---
 ### Useful features
-https://notistack.com/features/basic
+<p>
+  https://notistack.com/features/basic
+  </p>
 ---
 ---
 ```
