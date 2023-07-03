@@ -1,4 +1,8 @@
 ```
+npm install notistack
+```
+
+```
 import "./App.css";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
 
@@ -21,6 +25,7 @@ export default App;
 ```
 
 
+---
 ---
 
 <p align="center">
