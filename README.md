@@ -1,12 +1,9 @@
 
 ---
 ### Useful features
-<p>
-  https://notistack.com/features/basic
-  
-  
----
----
+<p>  https://notistack.com/features/basic  
+------
+
 ```
 npm install notistack
 ```
