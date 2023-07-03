@@ -1,3 +1,26 @@
+<p>import "./App.css";
+import { SnackbarProvider, enqueueSnackbar } from "notistack";
+
+function App() {
+  const handleClickVariant = (variant, message) => () => {
+    enqueueSnackbar(message, { variant });
+  };
+
+  return (
+    <div className="App">
+      <SnackbarProvider />
+      {/* variant could be success, error, warning, info, or default */}
+      {/* "message" is message */}
+      <button onClick={handleClickVariant("warning", "message")}>Click</button>
+    </div>
+  );
+}
+
+export default App;
+</p>
+
+---
+
 <p align="center">
   <a href="https://notistack.com/" rel="noopener" target="_blank"><img src="https://user-images.githubusercontent.com/26996372/227733423-19064bf7-5176-4a0b-a1b6-cd80a7b32cdf.png" alt="notistack logo"></a></p>
 </p>
