@@ -1,4 +1,5 @@
-<p>import "./App.css";
+```
+import "./App.css";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
 }
 
 export default App;
-</p>
+```
+
 
 ---
 
