@@ -3,6 +3,7 @@
 ### Useful features
 <p>  https://notistack.com/features/basic  </p>  
 ---
+
 ```
 npm install notistack
 ```
@@ -22,7 +23,7 @@ npm install notistack
 
 ```
 let variant = "error";
-enqueueSnackbar("Sth. went wrong, please try again.", {variant});
+enqueueSnackbar(" The sample message goes here.", {variant});
 ```
 <p> App.js </p>
 
