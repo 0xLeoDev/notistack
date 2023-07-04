@@ -9,6 +9,7 @@
 npm install notistack
 ```
 <p> App.css </p>
+
 ```
 .SnackbarProviderButton {
   background-color: transparent;
@@ -19,6 +20,7 @@ npm install notistack
   cursor: pointer;
 }
 ```
+
 ```
 import "./App.css";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
