@@ -1,10 +1,8 @@
 ---
 ---
 ### Useful features
-<p>  https://notistack.com/features/basic  
-  
+<p>  https://notistack.com/features/basic  </p>  
 ---
-
 ```
 npm install notistack
 ```
@@ -20,12 +18,17 @@ npm install notistack
   cursor: pointer;
 }
 ```
+<p> This Is the only way I found for it to work inside the function. </p>
+
+```
+let variant = "error";
+enqueueSnackbar("Sth. went wrong, please try again.", {variant});
+```
+<p> App.js </p>
 
 ```
 import "./App.css";
-import { SnackbarProvider, enqueueSnackbar } from "notistack";
-import { closeSnackbar } from 'notistack'
-
+import { SnackbarProvider, enqueueSnackbar, closeSnackbar} from "notistack";
 
 function App() {
   const handleClickVariant = (variant, message) => () => {
