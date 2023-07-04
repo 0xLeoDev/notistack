@@ -11,12 +11,12 @@ npm install notistack
 <p> App.css </p>
 
 ```
-.SnackbarProviderButton {
+.notistackButton {
   background-color: transparent;
   border: none;
   color: whitesmoke;
 }
-.SnackbarProviderButton:hover {
+.notistackButton:hover {
   cursor: pointer;
 }
 ```
@@ -36,7 +36,7 @@ function App() {
     <div className="App">
       <SnackbarProvider
           action={(snackbarId) => (
-          <button className='SnackbarProviderButton' onClick={() => closeSnackbar(snackbarId)}>✖</button>
+          <button className='notistackButton' onClick={() => closeSnackbar(snackbarId)}>✖</button>
       )}
         
           {/* variant could be success, error, warning, info, or default */}
