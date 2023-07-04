@@ -8,10 +8,22 @@
 ```
 npm install notistack
 ```
-
+<p> App.css </p>
+```
+.SnackbarProviderButton {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+}
+.SnackbarProviderButton:hover {
+  cursor: pointer;
+}
+```
 ```
 import "./App.css";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
+import { closeSnackbar } from 'notistack'
+
 
 function App() {
   const handleClickVariant = (variant, message) => () => {
@@ -20,9 +32,13 @@ function App() {
 
   return (
     <div className="App">
-      <SnackbarProvider />
-      {/* variant could be success, error, warning, info, or default */}
-      {/* "message" is message */}
+      <SnackbarProvider
+          action={(snackbarId) => (
+          <button className='SnackbarProviderButton' onClick={() => closeSnackbar(snackbarId)}>✖</button>
+      )}
+        
+          {/* variant could be success, error, warning, info, or default */}
+          {/* "message" is message */}
       <button onClick={handleClickVariant("warning", "message")}>Click</button>
     </div>
   );
